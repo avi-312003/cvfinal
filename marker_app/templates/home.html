@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aruco Marker Augmentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-dZl+JrqWW01cmYHL4Z+L1aERWaxUj04FqfHFb5DB1JlFq9F8xIMb4c3dA" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Aruco Marker Augmentation</h1>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-primary" onclick="location.href='{% url 'upload_image' %}'">Upload Image</button>
+            <button class="btn btn-primary" onclick="location.href='{% url 'upload_video' %}'">Upload Video</button>
+            <button class="btn btn-primary" onclick="location.href='{% url 'live_camera' %}'">Live Camera</button>
+        </div>
+    </div>
+</body>
+</html>

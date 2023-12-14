@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Camera</title>
+</head>
+<body>
+    <h1>Live Camera</h1>
+    <img id="video-feed" src="{% url 'live_camera' %}" alt="Live Camera Feed">
+    <button onclick="startCamera()">Start Camera</button>
+    <button onclick="stopCamera()">Stop Camera</button>
+
+    <script>
+        function startCamera() {
+            // Implement logic to start the camera
+            alert('Camera started');
+        }
+
+        function stopCamera() {
+            // Implement logic to stop the camera
+            alert('Camera stopped');
+        }
+    </script>
+</body>
+</html>
